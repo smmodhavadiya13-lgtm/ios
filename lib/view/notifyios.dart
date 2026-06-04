@@ -8,6 +8,7 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
+//auth commit 1
 class _HomeScreenState extends State<HomeScreen> {
   final FirebaseMessaging _messaging = FirebaseMessaging.instance;
 
@@ -20,12 +21,14 @@ class _HomeScreenState extends State<HomeScreen> {
     setupFirebase();
   }
 
+  //auth commit 2
   void requestPermission() async {
     NotificationSettings settings = await _messaging.requestPermission(
       alert: true,
       badge: true,
       sound: true,
     );
+    //main latest
 
     print("Permission: ${settings.authorizationStatus}");
   }
@@ -46,6 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  //main commit
   @override
   Widget build(BuildContext context) {
     return Scaffold(
