@@ -8,6 +8,7 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
+//auth commit 1
 class _HomeScreenState extends State<HomeScreen> {
   final FirebaseMessaging _messaging = FirebaseMessaging.instance;
 
