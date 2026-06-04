@@ -26,6 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
       badge: true,
       sound: true,
     );
+    //main latest
 
     print("Permission: ${settings.authorizationStatus}");
   }
