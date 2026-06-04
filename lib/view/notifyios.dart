@@ -21,6 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
     setupFirebase();
   }
 
+  //auth commit 2
   void requestPermission() async {
     NotificationSettings settings = await _messaging.requestPermission(
       alert: true,
